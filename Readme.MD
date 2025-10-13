@@ -15,7 +15,11 @@
     ros2 run tf2_tools view_frames
     ros2 run tf2_ros tf2_echo <source_frame> <target_frame>
     ros2 topic list | grep tf
-    ros2 run tf2_ros static_transform_publisher --x 0.1 --y 0 --z 0.2 --roll 0 --pitch 0 --yaw 0 --frame-id base_link --child-frame-id base_laser
+    ros2 run tf2_ros static_transform_publisher --x 0.1 --y 0 --z 0.2 --roll 0 --pitch 0 --yaw 0 --frame-id base_link --child-frame-id 
+    base_laser
+    ros2 run rqt_graph rqt_graph
+
+
 ```
 
 
